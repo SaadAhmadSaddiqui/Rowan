@@ -1,0 +1,38 @@
+:host {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+}
+
+.heading-1 {
+  flex: 1 1 100%;
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.heading-2 {
+  flex: 1 1 100%;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.text {
+  margin-top: 10px;
+  flex: 1 1 100%;
+  max-width: 72%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-custom {
+  background-color: #54c296;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.btn-wrapper {
+  margin-top: 10px;
+  flex: 1 1 100%;
+}
