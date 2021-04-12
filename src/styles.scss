@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~swiper/swiper-bundle';
 
 $primary-color: #150840;
 $secondary-color: #444950;
 
 body {
   font-family: Poppins, sans-serif !important;
+}
+
+.swiper-button-prev{
+  display: none;
+}
+
+.swiper-button-next{
+  display: none;
 }
