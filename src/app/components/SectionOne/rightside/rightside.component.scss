@@ -1,7 +1,14 @@
 .iphone {
   z-index: 1;
-  width: 43.8%; 
+  width: 43.8%;
   animation: phone 3s;
+  @media only screen and (max-width: 1200px) {
+    width: 60.8%;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 2rem;
+    width: 80.8%;
+  }
 }
 
 .ellipse {
@@ -9,6 +16,12 @@
   z-index: 0;
   width: 70%;
   animation: ellipse 3s;
+  @media only screen and (max-width: 1200px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .msg-1 {
@@ -17,6 +30,14 @@
   bottom: 20%;
   left: 10%;
   width: 30%;
+  @media only screen and (max-width: 1200px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 768px) {
+    bottom: 20%;
+    left: 5%;
+    width: 50%;
+  }
 }
 
 .msg-2 {
@@ -25,6 +46,15 @@
   bottom: 24%;
   right: 8%;
   width: 28%;
+  @media only screen and (max-width: 1200px) {
+    right: 5%;
+    width: 32%;
+  }
+  @media only screen and (max-width: 768px) {
+    bottom: 27%;
+    right: -5%;
+    width: 38%;
+  }
 }
 
 .msg-3 {
@@ -33,6 +63,15 @@
   top: 10%;
   right: 11%;
   width: 28%;
+  @media only screen and (max-width: 1200px) {
+    right: 5%;
+    width: 32%;
+  }
+  @media only screen and (max-width: 768px) {
+    top: 15%;
+    right: -5%;
+    width: 36%;
+  }
 }
 
 @keyframes ellipse {

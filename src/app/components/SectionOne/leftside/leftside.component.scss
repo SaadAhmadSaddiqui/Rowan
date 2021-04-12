@@ -2,12 +2,20 @@
   flex: 1 1 100%;
   font-size: 3.3rem;
   font-weight: 700;
+  @media only screen and (max-width: 768px) {
+    font-size: 2.5rem;
+    padding: 0 !important;
+  }
 }
 
 .heading-2 {
   flex: 1 1 100%;
   font-size: 2.75rem;
   font-weight: 700;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.9rem;
+    padding: 0 !important;
+  }
 }
 
 .text {
@@ -16,6 +24,12 @@
   max-width: 75%;
   font-size: 1rem;
   font-weight: 500;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 100%;
+    font-size: 0.9rem;
+    padding: 0 !important;
+  }
 }
 
 .btn-custom {
@@ -24,6 +38,8 @@
   color: #fff;
   padding: 0.625rem 0.95rem;
   font-weight: 600;
+  @media only screen and (max-width: 768px) {
+  }
 }
 
 .btn-wrapper {
