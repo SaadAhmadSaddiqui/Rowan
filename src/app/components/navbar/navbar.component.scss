@@ -8,4 +8,8 @@
 
 .bg-blue {
   background-color: transparent;
+
+  @media only screen and (max-width: 767px) {
+    background-color: #150840;
+  }
 }

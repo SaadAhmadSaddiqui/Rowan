@@ -2,8 +2,11 @@
   background-color: #150840;
 }
 
-.mt-navsize {
-  padding-top: 4.875rem;
+.pt-navsize {
+  padding-top: 5.5rem;
+  @media only screen and (max-width: 767px) {
+    background-color: 3rem;
+  }
 }
 
 .circle-btn {
