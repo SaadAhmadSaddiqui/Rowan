@@ -1,5 +1,86 @@
-:host {
-  flex: 1 1 50%;
-  max-width: 50%;
-  display: flex;
+.iphone {
+  z-index: 1;
+  width: 43.8%; 
+  animation: phone 3s;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 0;
+  width: 70%;
+  animation: ellipse 3s;
+}
+
+.msg-1 {
+  position: absolute;
+  z-index: 2;
+  bottom: 20%;
+  left: 10%;
+  width: 30%;
+}
+
+.msg-2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 24%;
+  right: 8%;
+  width: 28%;
+}
+
+.msg-3 {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: 11%;
+  width: 28%;
+}
+
+@keyframes ellipse {
+  0% {
+    border-radius: 50%;
+    transform: scale(0);
+  }
+  100% {
+    border-radius: 50%;
+    transform: scale(1);
+  }
+}
+
+@keyframes phone {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-msg {
+  animation: msg-opacity 4s, msg-bounce 2s infinite;
+}
+
+@keyframes msg-opacity {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes msg-bounce {
+  0% {
+    transform: translateY(5%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
 }
