@@ -1,0 +1,28 @@
+.heading {
+  font-weight: 600;
+  color: #150840;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.4rem;
+  }
+}
+
+.subtext {
+  color: #23174d;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+  @media only screen and (max-width: 1200px) {
+    width: initial;
+    height: initial;
+  }
+}

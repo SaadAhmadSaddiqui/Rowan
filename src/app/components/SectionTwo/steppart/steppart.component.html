@@ -1,1 +1,13 @@
-<p>steppart works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-flex flex-wrap justify-content-center col-12 mb-5">
+      <h1 class="heading text-center mb-3">How to get started</h1>
+        <p class="sub-heading text-center">Filling out Hmrc paperwork. Sounds time-consuming, right? Wrong. Our process is 100% digital, which means you can do it wherever - and it takes just a few minutes.</p>
+    </div>
+    <div class="col-12 px-0">
+      <div class="d-flex overflow-scroll">
+        <step *ngFor="let step of steps; let i = index" [subText]="step" [stepCount]="i + 1"></step>
+      </div>
+    </div>
+  </div>
+</div>

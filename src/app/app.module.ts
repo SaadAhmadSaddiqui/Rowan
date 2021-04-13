@@ -14,6 +14,7 @@ import { SectionTwoComponent } from './components/SectionTwo/section-two/section
 import { CarouselpartComponent } from './components/SectionTwo/carouselpart/carouselpart.component';
 import { SteppartComponent } from './components/SectionTwo/steppart/steppart.component';
 import { SwiperModule } from 'swiper/angular';
+import { StepComponent } from './components/SectionTwo/steppart/step/step.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { SwiperModule } from 'swiper/angular';
     SectionTwoComponent,
     CarouselpartComponent,
     SteppartComponent,
+    StepComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
