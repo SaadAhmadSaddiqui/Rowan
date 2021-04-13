@@ -15,6 +15,9 @@ import { CarouselpartComponent } from './components/SectionTwo/carouselpart/caro
 import { SteppartComponent } from './components/SectionTwo/steppart/steppart.component';
 import { SwiperModule } from 'swiper/angular';
 import { StepComponent } from './components/SectionTwo/steppart/step/step.component';
+import { SectionThreeComponent } from './components/SectionThree/section-three/section-three.component';
+import { LeftSideComponent } from './components/SectionThree/left-side/left-side.component';
+import { RightSideComponent } from './components/SectionThree/right-side/right-side.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,9 @@ import { StepComponent } from './components/SectionTwo/steppart/step/step.compon
     CarouselpartComponent,
     SteppartComponent,
     StepComponent,
+    SectionThreeComponent,
+    LeftSideComponent,
+    RightSideComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],

@@ -1,0 +1,35 @@
+.right-side {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.heading {
+  color: #54c296;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.bubble-container {
+  position: relative;
+  padding: 0.938rem 2rem 0.938rem 0.938rem;
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  border-radius: 0.625rem;
+}
+
+.bubble-title {
+  color: #150840;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bubble-text {
+  color: #150840;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
