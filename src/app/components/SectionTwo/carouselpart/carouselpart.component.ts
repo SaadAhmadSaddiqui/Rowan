@@ -13,34 +13,32 @@ SwiperCore.use([Navigation, Autoplay]);
   styleUrls: ['./carouselpart.component.scss'],
 })
 export class CarouselpartComponent implements OnInit, AfterViewInit {
-    breakpoints = 
+    breakpoints =
     {
-    // when window width is >= 320px
-    320: {
+    // when window width is >= 300px
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 420px
+    420: {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
-    480: {
+    // when window width is >= 720px
+    720: {
       slidesPerView: 3,
       spaceBetween: 30
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 3,
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
       spaceBetween: 10
     }
   }
-  
+
   constructor() {}
   ngAfterViewInit(): void {}
 
   ngOnInit(): void {}
-
-  onSwiper(swiper: any) {
-    console.log(swiper);
-  }
-  onSlideChange() {
-    console.log('slide change');
-  }
 }

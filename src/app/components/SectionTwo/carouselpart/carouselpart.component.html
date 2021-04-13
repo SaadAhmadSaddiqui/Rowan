@@ -4,20 +4,18 @@
       <h1 class="heading-1 text-center">Every tax refund, at your fingertips</h1>
     </div>
     <div class="col-12">
-    <swiper
-      [slidesPerView]="3"
-      [spaceBetween]="0"
-      (swiper)="onSwiper($event)"
-      (slideChange)="onSlideChange()"
-      [navigation]="true"
-      [autoplay]="{delay: 3000}"
-      [breakpoints]="breakpoints"
-    >
-      <ng-template swiperSlide> <img class="img-fluid" src="/assets/images/misc/illustrations/illustrations-1.png"/> </ng-template>
-      <ng-template swiperSlide> <img class="img-fluid" src="/assets/images/misc/illustrations/illustrations-2.png"/> </ng-template>
-      <ng-template swiperSlide> <img class="img-fluid" src="/assets/images/misc/illustrations/illustrations-3.png"/> </ng-template>
-      <ng-template swiperSlide> <img class="img-fluid" src="/assets/images/misc/illustrations/illustrations-4.png"/> </ng-template>
-    </swiper>
+      <swiper
+        [loop]="true"
+        [spaceBetween]="30"
+        [navigation]="true"
+        [autoplay]="{delay: 3000}"
+        [breakpoints]="breakpoints"
+      >
+        <ng-template swiperSlide> <img class="img-fluid w-90" src="/assets/images/svgs/illustrations/illustrations-1.svg" alt="illustrations-1"/> </ng-template>
+        <ng-template swiperSlide> <img class="img-fluid w-90" src="/assets/images/svgs/illustrations/illustrations-2.svg" alt="illustrations-2"/> </ng-template>
+        <ng-template swiperSlide> <img class="img-fluid w-90" src="/assets/images/svgs/illustrations/illustrations-3.svg" alt="illustrations-3"/> </ng-template>
+        <ng-template swiperSlide> <img class="img-fluid w-90" src="/assets/images/svgs/illustrations/illustrations-4.svg" alt="illustrations-4"/> </ng-template>
+      </swiper>
     </div>
   </div>
 </div>

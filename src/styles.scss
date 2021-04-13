@@ -15,3 +15,8 @@ body {
 .swiper-button-next{
   display: none;
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
