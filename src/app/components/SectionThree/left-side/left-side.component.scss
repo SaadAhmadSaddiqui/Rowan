@@ -1,18 +1,38 @@
 .left-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%;
+
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.images-container {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .chat-phone {
+  position: relative;
+  max-width: 80.8%;
   z-index: 1;
   animation: chat-phone 3s;
+  @media only screen and (max-width: 768px) {
+    margin-top: 2rem;
+    padding-left: -40px;
+    padding-right: -40px;
+  }
 }
 
 .ellipse {
   position: absolute;
   z-index: 0;
+  width: 100%;
   animation: ellipse 3s;
 }
 

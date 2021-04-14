@@ -18,6 +18,7 @@ import { StepComponent } from './components/SectionTwo/steppart/step/step.compon
 import { SectionThreeComponent } from './components/SectionThree/section-three/section-three.component';
 import { LeftSideComponent } from './components/SectionThree/left-side/left-side.component';
 import { RightSideComponent } from './components/SectionThree/right-side/right-side.component';
+import { SectionFourComponent } from './components/SectionFour/section-four/section-four.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { RightSideComponent } from './components/SectionThree/right-side/right-s
     SectionThreeComponent,
     LeftSideComponent,
     RightSideComponent,
+    SectionFourComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],

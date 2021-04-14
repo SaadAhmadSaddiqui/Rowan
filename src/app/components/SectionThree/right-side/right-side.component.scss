@@ -1,15 +1,39 @@
 .right-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 10%;
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+    margin-left: 0%;
+  }
+}
+
+.texts-container {
   position: relative;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
+
+  @media only screen and (max-width: 992px) {
+    align-items: center !important;
+  }
 }
 
 .heading {
   color: #54c296;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  @media only screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 2rem;
+    text-align: center;
+    align-items: center !important;
+  }
 }
 
 .bubble-container {
@@ -19,12 +43,19 @@
   flex-flow: column;
   background-color: #fff;
   border-radius: 0.625rem;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .bubble-title {
   color: #150840;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  @media only screen and (max-width: 1024px) {
+    font-size: 1rem;
+  }
 }
 
 .bubble-text {
@@ -32,4 +63,15 @@
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
+  @media only screen and (max-width: 1024px) {
+    font-size: 0.9rem;
+  }
+}
+
+.align-self-right {
+  align-self: flex-end;
+
+  @media only screen and (max-width: 992px) {
+    align-self: center;
+  }
 }

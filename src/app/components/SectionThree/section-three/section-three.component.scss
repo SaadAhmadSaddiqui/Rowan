@@ -2,16 +2,37 @@
   background-color: #150840;
 }
 
+.sides-container {
+  display: flex;
+  @media only screen and (max-width: 992px) {
+    flex-flow: wrap;
+  }
+}
+
 .left {
-  margin: 6.5rem 1rem 5em;
+  margin: 6.5rem 1rem 4em;
   flex: 1 1 46%;
   max-width: 46%;
+
+  @media only screen and (max-width: 992px) {
+    margin: 0.5rem 1rem 3rem;
+    order: 2;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .right {
-  margin: 6.5rem 1rem 5em;
+  margin: 6.5rem 1rem 4em;
   flex: 1 1 46%;
   max-width: 46%;
+
+  @media only screen and (max-width: 992px) {
+    margin: 4rem 1rem 0.5rem;
+    order: 1;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .flex-1 {

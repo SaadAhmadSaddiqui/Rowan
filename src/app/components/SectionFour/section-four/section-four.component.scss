@@ -1,0 +1,25 @@
+.section {
+  padding: 5rem 0;
+}
+
+.heading {
+  margin: 0 1.25rem;
+  flex: 1 1 100%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #150840;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.heart {
+  width: 2.5rem;
+  height: 2.5rem;
+  @media only screen and (max-width: 455px) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
