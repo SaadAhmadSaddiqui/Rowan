@@ -1,3 +1,13 @@
 <div class="d-flex flex-wrap justify-content-center section">
-  <div class="heading">Why people <img class="heart" src="/assets/images/svgs/section-four/heart.svg" alt="heart"/> Rowan.ai</div>
+  <div class="heading-container">
+    <div class="heading">Why people <img class="heart" src="/assets/images/svgs/section-four/heart.svg" alt="heart"/> Rowan.ai</div>
+  </div>
+  <div class="slider">
+    <div class="slider-track">
+      <div class="cards-container">
+        <section-four-review *ngFor="let rev of reviewsList1"></section-four-review>
+        <section-four-review *ngFor="let rev of reviewsList1"></section-four-review>
+      </div>
+    </div>
+  </div>
 </div>

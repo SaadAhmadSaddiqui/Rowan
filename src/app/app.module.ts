@@ -19,6 +19,7 @@ import { SectionThreeComponent } from './components/SectionThree/section-three/s
 import { LeftSideComponent } from './components/SectionThree/left-side/left-side.component';
 import { RightSideComponent } from './components/SectionThree/right-side/right-side.component';
 import { SectionFourComponent } from './components/SectionFour/section-four/section-four.component';
+import { ReviewComponent } from './components/SectionFour/review/review.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { SectionFourComponent } from './components/SectionFour/section-four/sect
     LeftSideComponent,
     RightSideComponent,
     SectionFourComponent,
+    ReviewComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],
