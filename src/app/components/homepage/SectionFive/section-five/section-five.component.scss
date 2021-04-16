@@ -1,5 +1,5 @@
 .section {
-  padding: 5rem 0 4rem;
+  padding: 5rem 0;
 }
 
 .heading {
@@ -11,6 +11,11 @@
 
 .title {
   font-weight: 600;
+  color: #150840;
+}
+
+.desc {
+  color: #150840;
 }
 
 .split {
@@ -23,13 +28,14 @@
   flex: 1 1 100%;
   display: flex;
   flex-flow: column;
+  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .content-container {
   text-align: center;
-  &:last-child .custom-btn {
-    margin-bottom: 0;
-  }
 }
 
 .custom-btn {
@@ -38,7 +44,6 @@
   color: #fff;
   padding: 0.625rem 0.95rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 img {
