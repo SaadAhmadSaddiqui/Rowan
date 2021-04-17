@@ -23,6 +23,7 @@ import { ReviewComponent } from './components/homepage/SectionFour/review/review
 import { SectionFiveComponent } from './components/homepage/SectionFive/section-five/section-five.component';
 import { SectionSixComponent } from './components/homepage/SectionSix/section-six/section-six.component';
 import { SectionSevenComponent } from './components/homepage/SectionSeven/section-seven/section-seven.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { SectionSevenComponent } from './components/homepage/SectionSeven/sectio
     SectionFiveComponent,
     SectionSixComponent,
     SectionSevenComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
   providers: [],

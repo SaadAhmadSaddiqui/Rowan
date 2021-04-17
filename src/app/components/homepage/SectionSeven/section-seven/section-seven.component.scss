@@ -46,6 +46,10 @@ section {
 }
 
 @media only screen and (min-width: 767px) {
+  .container {
+    max-width: 1300px;
+  }
+
   .container-tiny {
     max-width: 600px;
   }
