@@ -1,45 +1,38 @@
+.text-container {
+  width: clamp(25rem, 36.458vw, 43.75rem);
+}
+
 .heading-1 {
-  flex: 1 1 100%;
-  font-size: 3.3rem;
+  font-size: clamp(2.125rem, 4.01vw, 4.813rem);
   font-weight: 700;
-  @media only screen and (max-width: 768px) {
-    font-size: 2.5rem;
-  }
 }
 
 .heading-2 {
-  flex: 1 1 100%;
-  font-size: 2.75rem;
+  font-size: clamp(1.875rem, 3.49vw, 4.188rem);
   font-weight: 700;
-  @media only screen and (max-width: 768px) {
-    font-size: 1.9rem;
-  }
 }
 
 .text {
-  margin-top: 0.625rem;
-  flex: 1 1 100%;
-  max-width: 75%;
-  font-size: 1rem;
+  margin-top: 1.875rem;
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
   font-weight: 500;
-
-  @media only screen and (max-width: 768px) {
-    max-width: 100%;
-    font-size: 0.9rem;
-  }
 }
 
 .btn-custom {
   background-color: #54c296;
-  border-radius: 0.625rem;
+  border-radius: 0.938rem;
   color: #fff;
-  padding: 0.625rem 0.95rem;
+  font-size: clamp(1rem, 1.146vw, 1.375rem);
+  padding: 0.818em 1.455em;
   font-weight: 600;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
+    padding: 0.875em 1.875em;
   }
 }
 
 .btn-wrapper {
-  margin-top: 0.625rem;
-  flex: 1 1 100%;
+  margin-top: clamp(2rem, 2.604vw, 3.125rem);
+  @media only screen and (max-width: 767px) {
+    margin-top: 2.188rem;
+  }
 }
