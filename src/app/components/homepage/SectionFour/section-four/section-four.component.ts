@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { reviewData } from 'src/utils/reviewData';
 
 @Component({
   selector: 'homepage-section-four',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-four.component.scss'],
 })
 export class SectionFourComponent implements OnInit {
-  reviewsList1: string[] = new Array(5);
-  reviewsList2: string[] = new Array(5);
+  reviewsList1 = reviewData;
+  reviewsList2 = reviewData;
 
   constructor() {}
 

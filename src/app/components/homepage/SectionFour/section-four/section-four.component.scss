@@ -29,22 +29,21 @@
 
 .cards-container {
   flex: 1 1 100%;
-  margin: 0rem 0rem 3rem;
+  margin: 0rem 0rem 2rem;
   display: flex;
-  // flex-flow: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .slider {
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   position: relative;
 }
 
 .slider-track {
   display: flex;
-  width: calc(9rem * 14);
+  width: calc(18rem * 14);
   animation: scroll 40s infinite linear;
 
   @media only screen and (max-width: 420px) {
@@ -57,6 +56,11 @@
   animation-play-state: paused;
   -webkit-touch-callout: none;
   user-select: none;
+}
+
+.animate-offset {
+  animation: scroll 40s infinite linear;
+  animation-direction: reverse;
 }
 
 @keyframes scroll {

@@ -3,6 +3,41 @@
 // }
 
 :host {
-    flex: 1 1 18rem;
-    min-width: 18rem;
+  flex: 1 1 18rem;
+  min-width: 18rem;
 }
+
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #808080;
+}
+
+.social-img-container {
+  align-self: flex-start;
+  height: 2.5rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate-star {
+  margin-right: 0.625rem;
+}
+
+.rate-num {
+  color: #54c296;
+}
+
+// .rev-person {
+//   flex: 1 1 100%;
+//   max-width: 100%;
+// }

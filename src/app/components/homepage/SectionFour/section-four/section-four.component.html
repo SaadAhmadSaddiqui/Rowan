@@ -4,9 +4,17 @@
   </div>
   <div class="slider">
     <div class="slider-track">
+      <div class="cards-container justify-content-start">
+        <section-four-review *ngFor="let rev of reviewsList1" [rev]="rev"></section-four-review>
+        <section-four-review *ngFor="let rev of reviewsList1" [rev]="rev"></section-four-review>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="slider-track animate-offset">
       <div class="cards-container">
-        <section-four-review *ngFor="let rev of reviewsList1"></section-four-review>
-        <section-four-review *ngFor="let rev of reviewsList1"></section-four-review>
+        <section-four-review *ngFor="let rev of reviewsList2" [rev]="rev"></section-four-review>
+        <section-four-review *ngFor="let rev of reviewsList2" [rev]="rev"></section-four-review>
       </div>
     </div>
   </div>

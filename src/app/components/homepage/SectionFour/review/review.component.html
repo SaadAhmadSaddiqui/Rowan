@@ -1,9 +1,24 @@
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <div class="d-flex  justify-content-between align-items-center mb-3">
+      <div class="rev-from d-flex align-items-center">
+        <div class="social-img-container">
+          <img [src]="rev.reviewFrom.img" [alt]="rev.reviewFrom.name" class="social-img">
+        </div>
+        <div class="rev-person d-flex flex-column">
+          <h5 class="card-title">{{rev.name | titlecase }}</h5>
+          <h6 class="card-subtitle mb-2">Review from {{rev.reviewFrom.name | titlecase }}</h6>
+        </div>
+      </div>
+      <div class="rev-rating d-flex align-items-start">
+        <img class="rate-star img-fluid" src="/assets/images/svgs/section-four/rating-star.svg" alt="rating star">
+        <p class="rate-num">
+          {{rev.rating}}
+        </p>
+      </div>
+    </div>
+    <p class="card-text">
+      {{rev.comment}}
+    </p>
   </div>
 </div>
